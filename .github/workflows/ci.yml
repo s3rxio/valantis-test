@@ -22,3 +22,5 @@ jobs:
           node-version: 20
           cache: "yarn"
       - run: yarn install --frozen-lockfile
+      - run: npx nx build frontend
+      - run: npx nx build backend
